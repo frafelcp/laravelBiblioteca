@@ -12,7 +12,7 @@
                                 <div class="media">
                                     <div class="media-left">
                                         <a href="#" data-target="#modal-doc-{{$documento->id}}" data-toggle="modal" class="">
-                                            <img src="{{asset('biblioteca/caratulas/'.$documento->caratula)}}" alt="{{ $documento->nombre}}" class="imedia-object" height="140px" width="100px" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=100;this.height=80;">                        
+                                            <img src="{{asset('biblioteca/caratulas/'.$documento->caratula)}}" alt="{{ $documento->nombre}}" class="media-object" height="140px" width="100px" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=100;this.height=80;">                        
                                         </a>
                                     </div>
                                     <div class="media-body">
