@@ -8,12 +8,14 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         @foreach($documentos as $documento)
-                            <div class="col-xs-6 col-md-3">
-                                <div class="thumbnail">
-                                    <a href="#" data-target="#modal-doc-{{$documento->id}}" data-toggle="modal" class="">
-                                        <img src="{{asset('biblioteca/caratulas/'.$documento->caratula)}}" alt="{{ $documento->nombre}}" class="img-thumbnail" height="100px" width="100px" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=100;this.height=80;">                        
-                                    </a>
-                                    <div class="caption">
+                            <div class="panel-body">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#" data-target="#modal-doc-{{$documento->id}}" data-toggle="modal" class="">
+                                            <img src="{{asset('biblioteca/caratulas/'.$documento->caratula)}}" alt="{{ $documento->nombre}}" class="imedia-object" height="140px" width="100px" onmouseover="this.width=500;this.height=400;" onmouseout="this.width=100;this.height=80;">                        
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
                                         <h3>{{$documento->nombre}}</h3>
                                         <p>Autor: {{$documento->autor}}</p>
                                         <p>Tipo de Documento: {{$documento->tipo_documento->nombre}}</p>
