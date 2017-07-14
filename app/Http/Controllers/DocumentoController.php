@@ -17,7 +17,7 @@ class DocumentoController extends Controller
      */
     public function index()
     {
-        $documentos = Documento::paginate(7);
+        $documentos = Documento::paginate(5);
         return \View::make('documento/index', compact('documentos'));
     }
 
